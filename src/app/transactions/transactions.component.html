@@ -1,0 +1,27 @@
+<div style="margin-left:0%;margin-top: -29%;background-color: rgb(229, 238, 238);bottom: 0;">
+ <br>
+    <h3 style="color: blue" align="center" >Print Transactions</h3>
+<form class="container panel-default col-md-4">
+  <div class="form-group" >
+    <label>Bank Account number</label>
+    <input type="number" name="accNo" class="form-control" [(ngModel)]="accNo" required>
+  </div>
+  <button type="submit" class="btn btn-primary" (click)='printTransactions()'>Print</button>
+  <br><br>
+  <br><br>   
+  
+</form>
+
+<table class="table table-striped col-md-6 container">
+     
+        <tr><th>Transaction ID</th><th>Credited</th><th>Debited</th><th>Balance</th><th>Account Number</th></tr>
+        <tr *ngFor="let t of transList">
+          <td>{{t.transactionId}}</td>
+          <td>{{t.creditedAmount}}</td>
+          <td>{{t.debitedAmount}}</td>
+          <td>{{t.balance}}</td>
+          <td>{{t.accNo}}</td>
+        </tr>
+      </table>
+
+</div>

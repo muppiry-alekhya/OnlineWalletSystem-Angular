@@ -1,0 +1,48 @@
+<div style="margin-left: 0%;margin-top: -29%;background-color:rgb(230, 243, 212);bottom: 0;">
+
+    <h3 style="color: blue" align="center" >Create Account</h3>
+<form class="container panel-default col-md-4">
+
+  
+  <div class="form-group" >
+
+    <label>Name</label>
+    <input type="text" name="name" class="form-control" [(ngModel)]="online.accHolder" required>
+    
+  </div>
+  
+  
+  <div class="form-group" >
+
+    <label>Balance </label>
+    <input type="number" name="balance" class="form-control" [(ngModel)]="online.balance" required>
+
+  </div>
+  <div class="form-group" >
+
+    <label>Phoneno </label>
+    <input type="number" name="Phoneno" class="form-control" [(ngModel)]="online.Phoneno" required>
+
+  </div>
+  <div class="form-group" >
+
+    <label>Email</label>
+    <input type="text" name="Email" class="form-control" [(ngModel)]="online.Email" required>
+
+  </div>
+
+  <div class="form-group" >
+
+    <label>Password</label>
+    <input type="password" name="Password" class="form-control" [(ngModel)]="online.Password" required>
+
+  </div>
+
+
+  
+  <button type="submit" class="btn btn-success" (click)='createAccount()'>Add Account</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  <button type="reset" class="btn btn-danger">Cancel Account</button>
+<br><br>
+</form>
+</div>
